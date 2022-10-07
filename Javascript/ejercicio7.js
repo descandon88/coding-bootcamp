@@ -1,10 +1,11 @@
+// Ejercicio 7
 //  Realizar un programa que permita cargar dos listas de 3 valores cada
 //una. Informar con un mensaje cuál de las dos listas tiene un valor
 // acumulado mayor (mensajes 'Lista 1 mayor', 'Lista 2 mayor', 'Listas
 // iguales’)
 // Tener en cuenta que puede haber dos o más estructuras repetitivas en un
 // algoritmo.
-
+// EJERCICIO 7
 //let list1 = [21,10,3,100];
 let list2 = [21,10,3];
 
@@ -15,7 +16,7 @@ for (let index = 0; index < 3; index++) {
        
 }
 
-function listaMayor (l1,l2) {
+function listaMayor(l1,l2) {
     let sum1 = 0;
     let sum2 = 0;
     for (let index = 0; index < l1.length; index++) {
