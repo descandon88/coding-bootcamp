@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 19 - Venta de Terrenos</title>
+    <script>
+      // Ejercicio 19 - Venta de Terrenos
+      let a = parseInt(prompt("ingrese el valor de A: "));
+      let b = parseInt(prompt("ingrese el valor de B: "));
+      let c = parseInt(prompt("ingrese el valor de C: "));
+
+      //   let c = a / 2;
+      if (a > c) {
+        let area_triangulo = (b * (a - c)) / 2;
+        let area_rectangulo = b * c;
+
+        document.write("Area del Triangulo: " + area_triangulo + " m2");
+        document.write("</br>");
+
+        document.write("Area del rectangulo: " + area_rectangulo + " m2");
+        document.write("</br>");
+        document.write(
+          "Area Total: " + area_rectangulo * area_triangulo + " m2"
+        );
+      } else {
+        alert("Vuelve a ingresar");
+      }
+    </script>
+  </head>
+  <body></body>
+</html>

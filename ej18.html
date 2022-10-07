@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio#18 JS</title>
+    <script>
+      // Ejercicio 18 - Máquina expendedora
+      let valor = parseInt(prompt("ingrese el valor del producto: "));
+      let dinero = parseInt(
+        prompt("ingrese el dinero entregado a la maquina: ")
+      );
+      let monedas10_maquina = 30;
+      let monedas5_maquina = 50;
+      //30 monedas de 10
+      //50 monedas de 5
+      if (valor % 5 === 0) {
+        console.log("El valor del producto es: " + valor);
+        console.log("El dinero ingresado a la máquina es: " + dinero);
+        if (valor < dinero) {
+          let cambio = dinero - valor;
+          let moneda10 = parseInt(cambio / 10);
+          monedas10_maquina -= moneda10;
+          // let moneda5 = (cambio - moneda10 * 10) / 5;
+          // monedas5_maquina -= moneda5;
+          console.log("Su cambio es: " + cambio);
+          let moneda5 = 0;
+
+          if (monedas10_maquina < 1) {
+            while (monedas5_maquina >= 0) {
+              moneda5 += 1;
+
+              monedas5_maquina -= moneda5;
+              console.log(monedas5_maquina);
+              console.log(moneda5);
+            }
+          } else {
+            moneda5 = (cambio - moneda10 * 10) / 5;
+            monedas5_maquina -= moneda5;
+          }
+
+          let total_maquina = monedas5_maquina * 5 + monedas10_maquina * 10;
+          console.log(total_maquina);
+          if (cambio <= total_maquina) {
+            console.log("Monedas de 10 de cambio: " + moneda10);
+
+            console.log("Monedas de 5 de cambio : " + moneda5);
+            console.log(
+              "Monedas de 10 restantes en la máquina " + monedas10_maquina
+            );
+            console.log(
+              "Monedas de 5 restantes en la máquina : " + monedas5_maquina
+            );
+          } else {
+            let monedas10_faltantes = 30 + monedas10_maquina;
+            let monedas5_faltantes = 50 + monedas5_maquina;
+            console.log("No hay cambio suficiente.");
+          }
+        }
+      } else {
+        console.log("ingrese valores múltiplos de 5");
+      }
+    </script>
+  </head>
+  <body></body>
+</html>
