@@ -1,13 +1,16 @@
 
-//Ejercicio #3 - VERSION CON Array().fill().map()
+//Ejercicio #3 - VERSION CON FOR PARA GENERACION DE UN ARREGLO CON FOR
 // Escribir un programa que lea 10 notas de alumnos y nos informe cuántos
 // tienen notas mayores o iguales a 7 y cuántos menores.
 
-let notes=array[Math.floor(Math.random()*10)]; 
-const lista_notas = Array(10).fill().map(() => parseInt(10 * Math.random())); // Fuente: https://dirask.com/posts/JavaScript-generate-array-with-10-random-numbers-paolg1
-
-console.log(lista_notas);
-
+// hacer un for de 10 de length, que haga un push dentro del array. 
+let lista_iter= []
+for (let index = 0; index < 10; index++) {
+   
+    lista_iter[index] = parseInt(Math.random()*10+1);
+       
+}
+console.log(lista_iter);
 
 function calification(lista) {
     let count_7=0;
@@ -27,4 +30,4 @@ function calification(lista) {
     // return count_7, count_lower;
 };
 
-calification(lista_notas);
+calification(lista_iter);
