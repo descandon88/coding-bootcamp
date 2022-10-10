@@ -50,36 +50,36 @@ const maquinaExpendedora = (mm10,mm5,valor,dinero) => {
 
             }
             else {
-            //console.log(acumulado);
-            console.log("Total de monedas de 10 en la máquina: "+"0");
-            console.log("Total de monedas de 5 en la máquina: "+mm5);
+         
             console.log("Total de monedas de 10 de cambio: "+"30");
             console.log("Total monedas de 5 de cambio: "+moneda5);
+            console.log("Total de monedas de 10 en la máquina: "+"0");
+            console.log("Total de monedas de 5 en la máquina: "+mm5);
             };
           } 
           else {
             while (mm5 >= 1 && cambio>acumulado ) {
             moneda5 = parseInt((cambio - moneda10 * 10) / 5);
             mm5 --;
-            //console.log(mm5, " ", moneda5);
-            acumulado += 5;
-           
+            acumulado += 5;         
             };
-            //console.log(acumulado);
-
-            console.log("Total de monedas de 10 en la máquina: "+mm10);
-            console.log("Total de monedas de 5 en la máquina: "+mm5);
             console.log("Total de monedas de 10 de cambio: "+ moneda10);
             console.log("Total monedas de 5 de cambio: ",moneda5);
+            console.log("Total de monedas de 10 en la máquina: "+mm10);
+            console.log("Total de monedas de 5 en la máquina: "+mm5);
+       
           }
       
         };    
 
+    }
+    else {
+      console.log("Ingrese un valor múltiple de 5, vuelva a interlo.");
     };  
 };
 
-let dinero = 1000;
-let valor = 675;
+let dinero = 880;
+let valor = 550;
 let moma10 = 30;
 let moma5 = 50;
 maquinaExpendedora(moma10,moma5,valor,dinero);

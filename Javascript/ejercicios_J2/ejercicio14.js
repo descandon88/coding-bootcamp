@@ -26,7 +26,7 @@ const PosNegMul15 = (num) => {
     numNeg = num.filter(numero => numero <0 );
     numMul15 = num.filter(numero => numero%15===0);
     numPares = num.filter(numero => numero%2===0);
-
+    
     console.log("Positivos: ",numPos.length);
     console.log("Negativos: ",numNeg.length);
     console.log("Múltiplo de 15: ",numMul15.length);
