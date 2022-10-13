@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TaTeTi</title>
+    <style>
+      .row1 .row2 .row3 {
+        display: flex;
+        flex-direction: row;
+      }
+      .buton {
+        width: 100px;
+        margin: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Implementar un tablero de TaTeTi. Asociar el evento click de los 9 botones a una única -->
+    <!-- función. Alternar entre las "X" y "O". Mostrar un mensaje cuando gana un jugador. -->
+    <div>
+      <div class="row1" id="row1">
+        <button class="buton" id="buton1x1" value="buton1x1">1</button>
+        <button class="buton" id="buton1x2" value="buton1x2">2</button>
+        <button class="buton" id="buton1x3" value="buton1x3">3</button>
+      </div>
+      <div class="row2">
+        <button class="buton" id="buton2x1" value="buton2x1">4</button>
+        <button class="buton" id="buton2x2" value="buton2x2">5</button>
+        <button class="buton" id="buton2x2" value="buton2x3">6</button>
+      </div>
+      <div class="row3">
+        <button class="buton">7</button>
+        <button class="buton">8</button>
+        <button class="buton">9</button>
+      </div>
+    </div>
+    <script>
+      let clickCount = 0;
+
+      //   let OneAndOne = document.getElementsById("buton1x1").onclick;
+      let pos = 0;
+
+      document
+        .getElementById("buton1x2")
+        .addEventListener("click", ContadorButon1x2, true);
+      document
+        .getElementById("buton1x1")
+        .addEventListener("click", ContadorButon1x1, true);
+      document
+        .getElementById("buton1x3")
+        .addEventListener("click", ContadorButon1x3, true);
+      document
+        .getElementById("buton2x1")
+        .addEventListener("click", ContadorButon2x1, true);
+      document
+        .getElementById("buton2x2")
+        .addEventListener("click", ContadorButon2x2, true);
+
+      function ContadorButon1x1() {
+        pos = document.getElementById("buton1x1").value;
+        document.getElementById(pos).onclick = function () {
+          if (clickCount % 2 === 0) {
+            botonSeleccionX();
+          } else if (clickCount % 2 !== 0) {
+            botonSeleccionO();
+          }
+        };
+        clickCount++;
+      }
+      function ContadorButon1x2() {
+        pos = document.getElementById("buton1x2").value;
+        document.getElementById(pos).onclick = function () {
+          if (clickCount % 2 === 0) {
+            botonSeleccionX();
+          } else if (clickCount % 2 !== 0) {
+            botonSeleccionO();
+          }
+        };
+        clickCount++;
+        return clickCount;
+      }
+
+      function ContadorButon1x3() {
+        pos = document.getElementById("buton1x3").value;
+        document.getElementById(pos).onclick = function () {
+          if (clickCount % 2 === 0) {
+            botonSeleccionX();
+          } else if (clickCount % 2 !== 0) {
+            botonSeleccionO();
+          }
+        };
+        clickCount++;
+      }
+      function ContadorButon2x1() {
+        pos = document.getElementById("buton2x1").value;
+        document.getElementById(pos).onclick = function () {
+          if (clickCount % 2 === 0) {
+            botonSeleccionX();
+          } else if (clickCount % 2 !== 0) {
+            botonSeleccionO();
+          }
+        };
+        clickCount++;
+      }
+
+      function ContadorButon2x2() {
+        pos = document.getElementById("buton2x2").value;
+        document.getElementById(pos).onclick = function () {
+          if (clickCount % 2 === 0) {
+            botonSeleccionX();
+          } else if (clickCount % 2 !== 0) {
+            botonSeleccionO();
+          }
+        };
+        clickCount++;
+      }
+
+      function botonSeleccionX() {
+        document.getElementById(pos).style.background = "yellow";
+        document.getElementById(pos).innerHTML = "X";
+      }
+
+      function botonSeleccionO() {
+        document.getElementById(pos).style.background = "red";
+        document.getElementById(pos).innerHTML = "O";
+      }
+    </script>
+  </body>
+</html>
