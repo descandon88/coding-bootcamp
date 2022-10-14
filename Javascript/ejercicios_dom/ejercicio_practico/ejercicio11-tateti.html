@@ -28,12 +28,12 @@
       <div class="row2">
         <button class="buton" id="buton2x1" value="buton2x1">4</button>
         <button class="buton" id="buton2x2" value="buton2x2">5</button>
-        <button class="buton" id="buton2x2" value="buton2x3">6</button>
+        <button class="buton" id="buton2x3" value="buton2x3">6</button>
       </div>
       <div class="row3">
-        <button class="buton">7</button>
-        <button class="buton">8</button>
-        <button class="buton">9</button>
+        <button class="buton" id="buton3x1" value="buton3x1">7</button>
+        <button class="buton" id="buton3x2" value="buton3x2">8</button>
+        <button class="buton" id="buton3x3" value="buton3x3">9</button>
       </div>
     </div>
     <script>
@@ -41,13 +41,22 @@
 
       //   let OneAndOne = document.getElementsById("buton1x1").onclick;
       let pos = 0;
+      let candado1x1 = 0;
+      let candado1x2 = 0;
+      let candado1x3 = 0;
+      let candado2x1 = 0;
+      let candado2x2 = 0;
+      let candado2x3 = 0;
+      let candado3x1 = 0;
+      let candado3x2 = 0;
+      let candado3x3 = 0;
 
       document
         .getElementById("buton1x2")
         .addEventListener("click", ContadorButon1x2, true);
       document
         .getElementById("buton1x1")
-        .addEventListener("click", ContadorButon1x1, true);
+        .addEventListener("click", FuncionButon1x1, true);
       document
         .getElementById("buton1x3")
         .addEventListener("click", ContadorButon1x3, true);
@@ -57,74 +66,160 @@
       document
         .getElementById("buton2x2")
         .addEventListener("click", ContadorButon2x2, true);
+      document
+        .getElementById("buton2x3")
+        .addEventListener("click", ContadorButon2x3, true);
+      document
+        .getElementById("buton3x1")
+        .addEventListener("click", ContadorButon3x1, true);
+      document
+        .getElementById("buton3x2")
+        .addEventListener("click", ContadorButon3x2, true);
+      document
+        .getElementById("buton3x3")
+        .addEventListener("click", ContadorButon3x3, true);
 
-      function ContadorButon1x1() {
+      function FuncionButon1x1() {
         pos = document.getElementById("buton1x1").value;
         document.getElementById(pos).onclick = function () {
-          if (clickCount % 2 === 0) {
+          if (clickCount % 2 === 0 && candado1x1 < 1) {
             botonSeleccionX();
-          } else if (clickCount % 2 !== 0) {
+            candado1x1++;
+            clickCount++;
+          } else if (clickCount % 2 !== 0 && candado1x1 < 1) {
             botonSeleccionO();
+            candado1x1++;
+            clickCount++;
           }
         };
-        clickCount++;
       }
       function ContadorButon1x2() {
         pos = document.getElementById("buton1x2").value;
         document.getElementById(pos).onclick = function () {
-          if (clickCount % 2 === 0) {
+          if (clickCount % 2 === 0 && candado1x2 < 1) {
             botonSeleccionX();
-          } else if (clickCount % 2 !== 0) {
+            candado1x2++;
+            clickCount++;
+          } else if (clickCount % 2 !== 0 && candado1x2 < 1) {
             botonSeleccionO();
+            candado1x2++;
+            clickCount++;
           }
         };
-        clickCount++;
-        return clickCount;
       }
 
       function ContadorButon1x3() {
         pos = document.getElementById("buton1x3").value;
         document.getElementById(pos).onclick = function () {
-          if (clickCount % 2 === 0) {
+          if (clickCount % 2 === 0 && candado1x3 < 1) {
             botonSeleccionX();
-          } else if (clickCount % 2 !== 0) {
+            candado1x3++;
+            clickCount++;
+          } else if (clickCount % 2 !== 0 && candado1x3 < 1) {
             botonSeleccionO();
+            candado1x3++;
+            clickCount++;
           }
         };
-        clickCount++;
       }
       function ContadorButon2x1() {
         pos = document.getElementById("buton2x1").value;
         document.getElementById(pos).onclick = function () {
-          if (clickCount % 2 === 0) {
+          if (clickCount % 2 === 0 && candado2x1 < 1) {
             botonSeleccionX();
-          } else if (clickCount % 2 !== 0) {
+            candado2x1++;
+            clickCount++;
+          } else if (clickCount % 2 !== 0 && candado2x1 < 1) {
             botonSeleccionO();
+            candado2x1++;
+            clickCount++;
           }
         };
-        clickCount++;
       }
 
       function ContadorButon2x2() {
         pos = document.getElementById("buton2x2").value;
         document.getElementById(pos).onclick = function () {
-          if (clickCount % 2 === 0) {
+          if (clickCount % 2 === 0 && candado2x2 < 1) {
             botonSeleccionX();
-          } else if (clickCount % 2 !== 0) {
+            candado2x2++;
+            clickCount++;
+          } else if (clickCount % 2 !== 0 && candado2x2 < 1) {
             botonSeleccionO();
+            candado2x2++;
+            clickCount++;
           }
         };
-        clickCount++;
+      }
+
+      function ContadorButon2x3() {
+        pos = document.getElementById("buton2x3").value;
+        document.getElementById(pos).onclick = function () {
+          if (clickCount % 2 === 0 && candado2x3 < 1) {
+            botonSeleccionX();
+            candado2x3++;
+            clickCount++;
+          } else if (clickCount % 2 !== 0 && candado2x3 < 1) {
+            botonSeleccionO();
+            candado2x3++;
+            clickCount++;
+          }
+        };
+      }
+      function ContadorButon3x1() {
+        pos = document.getElementById("buton3x1").value;
+        document.getElementById(pos).onclick = function () {
+          if (clickCount % 2 === 0 && candado3x1 < 1) {
+            botonSeleccionX();
+            candado3x1++;
+            clickCount++;
+          } else if (clickCount % 2 !== 0 && candado3x1 < 1) {
+            botonSeleccionO();
+            candado3x1++;
+            clickCount++;
+          }
+        };
+      }
+      function ContadorButon3x2() {
+        pos = document.getElementById("buton3x2").value;
+        document.getElementById(pos).onclick = function () {
+          if (clickCount % 2 === 0 && candado3x2 < 1) {
+            botonSeleccionX();
+            candado3x2++;
+            clickCount++;
+          } else if (clickCount % 2 !== 0 && candado3x2 < 1) {
+            botonSeleccionO();
+            candado3x2++;
+            clickCount++;
+          }
+        };
+      }
+      function ContadorButon3x3() {
+        pos = document.getElementById("buton3x3").value;
+        document.getElementById(pos).onclick = function () {
+          if (clickCount % 2 === 0 && candado3x3 < 1) {
+            botonSeleccionX();
+            candado3x3++;
+            clickCount++;
+          } else if (clickCount % 2 !== 0 && candado3x3 < 1) {
+            botonSeleccionO();
+            candado3x3++;
+            clickCount++;
+          }
+        };
       }
 
       function botonSeleccionX() {
         document.getElementById(pos).style.background = "yellow";
         document.getElementById(pos).innerHTML = "X";
+        document.getElementById(pos).style.fontSize = "15px";
       }
 
       function botonSeleccionO() {
         document.getElementById(pos).style.background = "red";
         document.getElementById(pos).innerHTML = "O";
+        document.getElementById(pos).style.color = "white";
+        document.getElementById(pos).style.fontSize = "15px";
       }
     </script>
   </body>
