@@ -26,9 +26,9 @@ Allows to run JavaScript outside the browser.
 
 ## Why is NodeJS so popular? 
 <ul>
-    <li>JS is everywhere. Js is the only choice to develop new web applications in the web browser. The new and robust framework is introduced to many new developers to create the wow factor.</li> 
-    <li>Easy to Maintain and modify. Every application starts to look outdated if it is not updated frequently.</li>
-    <li>With NodeJS, a bunch of small applications is developed instead of building a small size web application.</li>
+    <li>-JS is everywhere. Js is the only choice to develop new web applications in the web browser. The new and robust framework is introduced to many new developers to create the wow factor.</li> 
+    <li>-Easy to Maintain and modify. Every application starts to look outdated if it is not updated frequently.</li>
+    <li>-With NodeJS, a bunch of small applications is developed instead of building a small size web application.</li>
 </ul>
 
 
