@@ -1,4 +1,6 @@
- # What is NodeJS? 
+# NodeJS
+This section contains theory, notes and practices of NodeJS classes.
+# What is NodeJS? 
 A open-source and cross-platform runtime enrionment.
 
 Made for developing server-side and networking applications for executing JavaScript outside the browser.
