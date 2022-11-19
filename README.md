@@ -5,7 +5,7 @@
 
  React's strong suit is handling stateful, data-driven interfaces with minimal code an minimal pain, and it has all the bells and whistles you'd expect from a modern web frameowk: great support for forms, error handling, events, lists and more.<sup>2</sup>  
 
- <sup>1,2</sup> <p><i>Source: <a href="https://www.mongodb.com/mern-stack">Link</a></i></p>
+ <p><sup>1,2</sup> <i>Source: <a href="https://www.mongodb.com/mern-stack">Link</a></i></p>
  ## What is NodeJS? 
 A open-source and cross-platform runtime enrionment.
 
