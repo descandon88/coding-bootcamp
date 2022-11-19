@@ -1,8 +1,10 @@
 # Full Stack Web Bootcamp
  Repository of theory, exercises and files of Full Stack Developer bootcamp program.
- # What is ReactJS? 
- 
- # What is NodeJS? 
+ ## What is ReactJS? 
+ ReactJS is a declarative JavaScript framework for creating dynamic client-side applications in HTML. React lets you build up complex interfaces through simple components, connect them to data on your back-end server, and render them as HTML.
+
+ React's strong suit is handling stateful, data-driven interfaces with minimal code an minimal pain, and it has all the bells and whistles you'd expect from a modern web frameowk: great support for forms, error handling, events, lists and more.  
+ ## What is NodeJS? 
 A open-source and cross-platform runtime enrionment.
 
 Made for developing server-side and networking applications for executing JavaScript outside the browser.
@@ -11,7 +13,7 @@ Made for developing server-side and networking applications for executing JavaSc
 <li>NoJS is not a framework</li>
 </ul>
 
-## Node.js = Runtime Environment + JavaScript Library
+### Node.js = Runtime Environment + JavaScript Library
 
 <h3>Main Feature of Node:</h3> 
 Allows to run JavaScript outside the browser.
@@ -24,12 +26,14 @@ Allows to run JavaScript outside the browser.
     <li>-Other stuff.</li>
 </ul>
 
-## Why is NodeJS so popular? 
+### Why is NodeJS so popular? 
 <ul>
     <li>-JS is everywhere. Js is the only choice to develop new web applications in the web browser. The new and robust framework is introduced to many new developers to create the wow factor.</li> 
     <li>-Easy to Maintain and modify. Every application starts to look outdated if it is not updated frequently.</li>
     <li>-With NodeJS, a bunch of small applications is developed instead of building a small size web application.</li>
 </ul>
+
+## What is ExpressJS? 
 
 
 
