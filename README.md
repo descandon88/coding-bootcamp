@@ -1,22 +1,23 @@
-# Full Stack Web Bootcamp
- Repository of theory, exercises and files of Full Stack Developer bootcamp program.
+# Full Stack Web Developer Bootcamp
+ Repository of theory, practices and files of Full Stack Developer bootcamp program.
  ## What is ReactJS? 
- ReactJS is a declarative JavaScript framework for creating dynamic client-side applications in HTML. React lets you build up complex interfaces through simple components, connect them to data on your back-end server, and render them as HTML. <a href="https://www.mongodb.com/mern-stack">Source</a>
+ ReactJS is a declarative JavaScript framework for creating dynamic client-side applications in HTML. React lets you build up complex interfaces through simple components, connect them to data on your back-end server, and render them as HTML.<sup>1</sup> 
 
- React's strong suit is handling stateful, data-driven interfaces with minimal code an minimal pain, and it has all the bells and whistles you'd expect from a modern web frameowk: great support for forms, error handling, events, lists and more. <a href="https://www.mongodb.com/mern-stack">Source</a>
+ React's strong suit is handling stateful, data-driven interfaces with minimal code an minimal pain, and it has all the bells and whistles you'd expect from a modern web frameowk: great support for forms, error handling, events, lists and more.<sup>2</sup>  
+
+ <sup>1,2</sup> <p><i>Source: <a href="https://www.mongodb.com/mern-stack">Link</a></i></p>
  ## What is NodeJS? 
 A open-source and cross-platform runtime enrionment.
 
 Made for developing server-side and networking applications for executing JavaScript outside the browser.
 <ul>
-<li>NodeJS is not a programming language.</li>
-<li>NoJS is not a framework</li>
+<li>-NodeJS is not a programming language.</li>
+<li>-NoJS is not a framework</li>
 </ul>
 
 ### Node.js = Runtime Environment + JavaScript Library
 
-<h3>Main Feature of Node:</h3> 
-Allows to run JavaScript outside the browser.
+<h3>Main Feature of Node:</h3> Allows to run JavaScript outside the browser.
 <h3>What can you do with NodeJS?</h3> 
 
 <ul>
